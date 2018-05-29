@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppTwo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landscape" translatesAutoresizingMaskIntoConstraints="NO" id="pbR-UX-A8S">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYH-cI-0Qf">
+                                <rect key="frame" x="0.0" y="515.33333333333337" width="414" height="220.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City by the Sea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc8-T6-UHK">
+                                        <rect key="frame" x="20" y="20.333333333333258" width="374" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is such a beatiful place!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1c-4E-gT6">
+                                        <rect key="frame" x="20" y="59.333333333333258" width="374" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.80047865316901412" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="o1c-4E-gT6" firstAttribute="leading" secondItem="DYH-cI-0Qf" secondAttribute="leading" constant="20" id="C0d-sT-n7g"/>
+                                    <constraint firstItem="o1c-4E-gT6" firstAttribute="top" secondItem="bc8-T6-UHK" secondAttribute="bottom" constant="10" id="Ki6-F9-DKA"/>
+                                    <constraint firstItem="bc8-T6-UHK" firstAttribute="leading" secondItem="DYH-cI-0Qf" secondAttribute="leading" constant="20" id="OIL-FO-p1Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="o1c-4E-gT6" secondAttribute="trailing" constant="20" id="S2i-NE-bCZ"/>
+                                    <constraint firstItem="bc8-T6-UHK" firstAttribute="top" secondItem="DYH-cI-0Qf" secondAttribute="top" constant="20" id="W5p-5J-0Eg"/>
+                                    <constraint firstAttribute="trailing" secondItem="bc8-T6-UHK" secondAttribute="trailing" constant="20" id="nhR-GH-FLE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pbR-UX-A8S" secondAttribute="bottom" id="2aR-Xu-itZ"/>
+                            <constraint firstItem="pbR-UX-A8S" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aiz-Y9-CUr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pbR-UX-A8S" secondAttribute="trailing" id="bA7-fT-Y2L"/>
+                            <constraint firstAttribute="trailing" secondItem="DYH-cI-0Qf" secondAttribute="trailing" id="fRJ-MC-ynY"/>
+                            <constraint firstItem="DYH-cI-0Qf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qJ0-BY-pCN"/>
+                            <constraint firstItem="DYH-cI-0Qf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="wAx-WE-XgR"/>
+                            <constraint firstAttribute="bottom" secondItem="DYH-cI-0Qf" secondAttribute="bottom" id="www-cA-WzL"/>
+                            <constraint firstItem="pbR-UX-A8S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ycO-qr-oAR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="landscape" width="2005" height="1085"/>
+    </resources>
+</document>
