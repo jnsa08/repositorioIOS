@@ -11,8 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var leftImageView: UIImageView!
+    
     @IBOutlet weak var rightImageView: UIImageView!
+    
     @IBOutlet weak var leftScoreLabel: UILabel!
+    
     @IBOutlet weak var rightScoreLabel: UILabel!
     
     
@@ -28,7 +31,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func dealTapped(_ sender: Any) {
-        print("Deal!")
+        
+        let leftRandomNumber = arc4random_uniform(13) + 2
+        //print("left random number is:  \(leftRandomNumber)")
+        let rightRandomNumber = arc4random_uniform(13) + 2
+        //print("right random number is:  \(rightRandomNumber)")
+        
+        leftImageView.image = UIImage(named: "card\(leftRandomNumber)")
+        rightImageView.image = UIImage(named: "card\(rightRandomNumber)")
         
     }
     
